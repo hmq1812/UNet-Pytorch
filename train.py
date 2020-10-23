@@ -17,7 +17,7 @@ img_fns = glob("./data/*jpg")
 # Create train and val set
 val_fns = []
 train_fns = []
-random_idx = np.random.randint(0, len(img_fns), size=300)
+random_idx = np.random.randint(0, len(img_fns), size=1500)
 for idx in range(len(img_fns)):
     if idx in random_idx:
         val_fns.append(img_fns[idx])
